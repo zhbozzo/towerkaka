@@ -1,0 +1,17 @@
+{
+  "name": "Tower Defense Game",
+  "short_name": "TowerDefense",
+  "description": "Strategic tower placement defense game",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1f2937",
+  "theme_color": "#1f2937",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiMxZjI5MzciLz4KPHJlY3QgeD0iNDgiIHk9IjQ4IiB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHJ4PSI4IiBmaWxsPSIjMzMzM2ZmIi8+CjwvL3N2Zz4K",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
