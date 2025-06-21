@@ -497,10 +497,8 @@ export class GameEngine {
       }
     }
 
-    // Find available towers of that rarity
-    const availableTowers = SPECIAL_TOWERS.filter(
-      tower => tower.rarity === selectedRarity && !this.gameState.unlockedTowers.includes(tower.id)
-    );
+    // Find all towers of that rarity (including already unlocked ones for duplicates)
+    const availableTowers = SPECIAL_TOWERS.filter(tower => tower.rarity === selectedRarity);
 
     if (availableTowers.length === 0) {
       // If no towers of that rarity available, give coins back
@@ -509,6 +507,8 @@ export class GameEngine {
     }
 
     const selectedTower = availableTowers[Math.floor(Math.random() * availableTowers.length)];
+    
+    // Always add the tower to unlocked list (allowing duplicates)
     this.gameState.unlockedTowers.push(selectedTower.id);
     this.saveProgress();
 
